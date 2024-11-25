@@ -42,27 +42,30 @@
             // 
             // splitContainer1
             // 
-            splitContainer1.Location = new Point(4, 6);
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 0);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
+            splitContainer1.Panel1.BackColor = Color.FromArgb(192, 255, 255);
             splitContainer1.Panel1.Controls.Add(btnCancelarHilo);
             splitContainer1.Panel1.Controls.Add(btnIniciartarea);
             splitContainer1.Panel1.Controls.Add(btnIniciarHilo);
             splitContainer1.Panel1.Controls.Add(btnSecuencial);
+            splitContainer1.Panel1.Paint += splitContainer1_Panel1_Paint;
             // 
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(txtResultado);
-            splitContainer1.Size = new Size(436, 326);
-            splitContainer1.SplitterDistance = 145;
+            splitContainer1.Size = new Size(472, 340);
+            splitContainer1.SplitterDistance = 156;
             splitContainer1.TabIndex = 1;
             // 
             // btnCancelarHilo
             // 
             btnCancelarHilo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnCancelarHilo.Location = new Point(3, 141);
+            btnCancelarHilo.Location = new Point(14, 141);
             btnCancelarHilo.Name = "btnCancelarHilo";
             btnCancelarHilo.Size = new Size(117, 37);
             btnCancelarHilo.TabIndex = 4;
@@ -73,7 +76,7 @@
             // btnIniciartarea
             // 
             btnIniciartarea.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnIniciartarea.Location = new Point(3, 98);
+            btnIniciartarea.Location = new Point(14, 98);
             btnIniciartarea.Name = "btnIniciartarea";
             btnIniciartarea.Size = new Size(117, 37);
             btnIniciartarea.TabIndex = 3;
@@ -84,7 +87,7 @@
             // btnIniciarHilo
             // 
             btnIniciarHilo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnIniciarHilo.Location = new Point(3, 56);
+            btnIniciarHilo.Location = new Point(14, 56);
             btnIniciarHilo.Name = "btnIniciarHilo";
             btnIniciarHilo.Size = new Size(117, 36);
             btnIniciarHilo.TabIndex = 2;
@@ -95,7 +98,7 @@
             // btnSecuencial
             // 
             btnSecuencial.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnSecuencial.Location = new Point(3, 6);
+            btnSecuencial.Location = new Point(14, 6);
             btnSecuencial.Name = "btnSecuencial";
             btnSecuencial.Size = new Size(117, 44);
             btnSecuencial.TabIndex = 1;
@@ -105,11 +108,12 @@
             // 
             // txtResultado
             // 
+            txtResultado.BackColor = SystemColors.InactiveBorder;
             txtResultado.Dock = DockStyle.Fill;
             txtResultado.Location = new Point(0, 0);
             txtResultado.Multiline = true;
             txtResultado.Name = "txtResultado";
-            txtResultado.Size = new Size(287, 326);
+            txtResultado.Size = new Size(312, 340);
             txtResultado.TabIndex = 0;
             // 
             // frmConcurrencia
